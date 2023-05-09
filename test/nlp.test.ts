@@ -130,10 +130,10 @@ describe('NLP', () => {
   })
 
   it('format a monthy recurrence with bySetPos', () => {
-    const rrule = new RRule(parseString('RRULE:FREQ=MONTHLY;BYDAY=MO;BYSETPOS=2'))
-
-    expect(rrule.toText()).to.equal(
-      'every month on the 2nd Monday'
+    const rrule = new RRule(
+      parseString('RRULE:FREQ=MONTHLY;BYDAY=MO;BYSETPOS=2')
     )
+
+    expect(rrule.toText()).to.equal('every month on the 2nd Monday')
   })
 })
