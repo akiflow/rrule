@@ -56,7 +56,7 @@ function parseRrule(line: string) {
   const strippedLine = line.replace(/^RRULE:/i, '')
   const options = parseDtstart(strippedLine)
 
-  const attrs = line.replace(/^(?:RRULE|EXRULE):/i, '').split(';')
+  const attrs = line.replace(/^(?:RRULE|EXRULE):/i, '').split(';').filter(Boolean)
 
   attrs.forEach((attr) => {
     const [key, value] = attr.split('=')
