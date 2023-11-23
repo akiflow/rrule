@@ -27,7 +27,7 @@ to natural language.
 #### Client Side
 
 ```bash
-$ yarn add rrule
+$ yarn add @akiflow/rrule
 ```
 
 Alternatively, download manually:
@@ -44,9 +44,9 @@ Alternatively, download manually:
 Includes optional TypeScript types
 
 ```bash
-$ yarn add rrule
+$ yarn add @akiflow/rrule
 # or
-$ npm install rrule
+$ npm install @akiflow/rrule
 ```
 
 #### Usage
