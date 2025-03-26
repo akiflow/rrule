@@ -12,7 +12,10 @@
     "target": "es5",
     "importHelpers": true,
     "esModuleInterop": true,
-    "rootDirs": ["./src/"]
+    "rootDirs": ["./src/"],
+    "lib": ["ES2020"],
+    "types": [],
+    "skipLibCheck": true
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules", "./test/**/*"]
